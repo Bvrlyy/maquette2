@@ -1,0 +1,503 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins";
+}
+body {
+  display: flex;
+  align-items: center;
+  background-color: rgb(70, 72, 73);
+  flex-direction: column;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  background-color: #fec88a;
+  position: relative;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: url("images/bg_header.jpg");
+}
+
+.logo-header img {
+  height: 130px;
+}
+
+nav ul {
+  margin-left: 250px;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 45px;
+}
+
+nav a {
+  color: #bf6053;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+a:hover {
+  color: #a14647;
+}
+
+.barre-recherche {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 300px;
+  justify-content: right;
+  height: 20px;
+}
+
+header {
+  width: 100%;
+}
+
+.fa-magnifying-glass {
+  color: #fec88a;
+  background-color: #bf6053;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recherche {
+  border: solid 1px;
+  color: #bf6053;
+  background-color: transparent;
+}
+
+::placeholder {
+  color: #bf6053;
+}
+
+main {
+  padding: 0 170px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section1 {
+  gap: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 250px;
+  width: 980px;
+}
+
+.soupe {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 280px;
+  height: 215px;
+  color: white;
+  background-image: url("images/soupe.jpg");
+}
+
+.soupe-txt {
+  font-size: 18px;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  color: #fec88a;
+  width: 200px;
+  padding: 5px;
+}
+
+.salade {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 280px;
+  height: 215px;
+  color: white;
+  background-image: url("images/salade.jpg");
+}
+.salade-txt {
+  font-size: 18px;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  color: #fec88a;
+  width: 200px;
+  padding: 5px;
+}
+
+.dessert {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 280px;
+  height: 215px;
+  color: white;
+  background-image: url("images/dessert.jpg");
+}
+
+.dessert-txt {
+  font-size: 18px;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  color: #fec88a;
+  width: 200px;
+  padding: 5px;
+}
+
+.section2 {
+  justify-content: center;
+  width: 930px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  align-items: center;
+  row-gap: 40px;
+  justify-content: center;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+.right {
+  align-items: center;
+  display: flex;
+  width: 30%;
+  row-gap: 30px;
+  flex-direction: column;
+}
+
+.titre1 {
+  font-size: 15px;
+  width: 620px;
+  color: #fec88a;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: #bf6053;
+  padding: 8px;
+}
+.carte-large {
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  height: 250px;
+  width: 620px;
+}
+.txt {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 620px;
+  background-color: #c2c57e;
+}
+
+.logotoque {
+  margin-top: -70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.recette {
+  font-size: 15px;
+  color: #a14647;
+}
+
+.nom {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.auteur {
+  font-size: 15px;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.lireplus {
+  color: white;
+  font-size: 14px;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: #a14647;
+  width: 120px;
+  padding: 10px;
+}
+
+.partie2 {
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-petite,
+.image-petite img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.carte-petite {
+  width: 47%;
+}
+
+.txt-petit {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 100%;
+  background-color: #c2c57e;
+}
+
+.nom-petit {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.auteur-petit {
+  font-size: 13px;
+}
+
+.description-petit {
+  letter-spacing: 2px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 370px;
+  background-image: url("images/me.jpg");
+}
+.Apropos {
+  margin-top: 150px;
+  letter-spacing: 2px;
+}
+
+.mebio {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.reseaux {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.titre2 {
+  margin-top: 10px;
+  font-size: 15px;
+  width: 100%;
+  color: #fec88a;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: #bf6053;
+  padding: 8px;
+}
+
+.categories {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+
+.condiments {
+  color: white;
+  line-height: 30px;
+  width: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  list-style: none;
+  padding: 15px;
+}
+
+.fleches {
+  color: white;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  list-style: none;
+  padding: 15px;
+}
+
+.bieres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 380px;
+  background-image: url("images/bieres.jpg");
+  padding: 10px;
+}
+
+.bieres-content {
+  height: 100%;
+  width: 100%;
+  border: solid 3px #fec88a;
+  display: grid;
+  justify-content: center;
+}
+
+.bieres-txt {
+  color: #fec88a;
+  font-size: 18px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.majuscule {
+  font-size: 23px;
+}
+
+.lireplus-bieres {
+  align-self: center;
+  justify-self: flex-end;
+  color: white;
+  font-size: 14px;
+  justify-content: center;
+  background-color: #a14647;
+  width: 120px;
+  padding: 10px;
+}
+
+.cafe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 380px;
+  background-image: url("images/cafe.jpg");
+  padding: 10px;
+}
+
+.cafe-content {
+  height: 100%;
+  width: 100%;
+  border: solid 3px #fec88a;
+  display: grid;
+  justify-content: center;
+}
+
+.section3 {
+  padding-top: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 980px;
+  gap: 20px;
+}
+
+.titre3 {
+  font-size: 15px;
+  width: 95%;
+  color: #fec88a;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: #bf6053;
+  padding: 8px;
+}
+
+.galerie-photo {
+  row-gap: 20px;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.haut {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.bas {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 100%;
+  background-image: url("images/Calque.png");
+}
+
+.logo-footer {
+  margin-left: 200px;
+  width: 30%;
+  top: 10px;
+}
+
+footer ul {
+  margin-right: 100px;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 45px;
+  color: lightgray;
+}
+
+footer a {
+  color: rgb(165, 163, 163);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.txt-footer {
+  margin-top: 10px;
+  color: rgb(165, 163, 163);
+  font-size: 12px;
+  text-align: right;
+  margin-right: 200px;
+}
